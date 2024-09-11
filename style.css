@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s ease;
 }
 
 /* Mise en forme de la page */
@@ -16,40 +17,98 @@ h1 {
     border-radius: 10px;
     margin-bottom: 30px;
     color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation sur le survol du titre */
+h1:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
 }
 
 p {
     line-height: 1.8;
     margin: 20px 0;
-    padding: 10px;
+    padding: 15px;
     background-color: #ecf0f1;
     border-radius: 8px;
     border-left: 5px solid #3498db;
+    transition: background-color 0.3s ease;
+}
+
+/* Animation sur le survol des paragraphes */
+p:hover {
+    background-color: #e0e0e0;
 }
 
 ul {
-    list-style-type: square;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 li {
-    padding: 10px;
+    padding: 15px;
     background-color: #bdc3c7;
     border-radius: 5px;
     margin-bottom: 10px;
+    position: relative;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet d'animation sur les éléments de la liste */
+li:hover {
+    background-color: #95a5a6;
+    transform: translateX(10px);
+}
+
+li::before {
+    content: "✔"; /* Un symbole de coche avant chaque élément */
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #27ae60;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
 }
 
 /* Mise en forme du conteneur */
 .container {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 40px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
 }
 
-/* Style du corps de page */
-body {
-    background-color: #f5f6fa;
+/* Animation d'apparition en fondu pour le conteneur */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Effet sur le corps de la page lors du survol */
+body:hover {
+    background-color: #e0e0e0;
 }
