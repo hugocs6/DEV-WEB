@@ -1,0 +1,120 @@
+Créer une petite page HTML avec un titre, quelques paragraphes, et une liste non ordonnée.
+
+
+Créer une petite page HTML avec un titre, quelques paragraphes, et une liste non ordonnée.
+
+Étapes pour créer une petite page HTML avec VS Code et GitHub
+Installer Visual Studio Code :
+Si ce n'est pas déjà fait, téléchargez et installez Visual Studio Code depuis le site officiel : Visual Studio Code.
+
+Créer un compte GitHub :
+Si vous n'avez pas encore de compte, inscrivez-vous sur GitHub.
+
+Installer Git :
+Pour utiliser Git en local, vous devez installer Git sur votre machine. Vous pouvez télécharger Git ici.
+
+Configurer Git avec GitHub :
+Après avoir installé Git, configurez-le avec votre compte GitHub via la ligne de commande 
+
+git config --global user.name "VotreNom"
+git config --global user.email "VotreEmail"
+
+
+Créer un nouveau projet avec VS Code
+Ouvrir VS Code :
+Lancez Visual Studio Code sur votre machine.
+
+Créer un nouveau dossier de projet :
+Créez un dossier sur votre ordinateur, par exemple projet-html, pour stocker votre fichier HTML. Vous pouvez le faire directement dans VS Code en suivant ces étapes :
+
+Allez dans Fichier → Ouvrir un dossier...
+Sélectionnez ou créez le dossier projet-html.
+Créer le fichier HTML :
+Dans le dossier projet-html, créez un fichier nommé index.html :
+
+Clic droit sur le dossier dans l'Explorateur de fichiers de VS Code.
+Sélectionnez Nouveau fichier.
+Nommez-le index.html.
+Écrire le code HTML
+Ajouter la structure de base :
+Ouvrez le fichier index.html et ajoutez-y la structure de base HTML suivante :
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ma première page HTML</title>
+
+</head>
+
+<body>
+
+    <h1>Bienvenue sur ma page web</h1>
+
+    <p>Ceci est mon premier paragraphe sur cette page.</p>
+
+    <p>Voici un deuxième paragraphe pour plus de contenu.</p>
+
+    <ul>
+
+        <li>Élément de liste 1</li>
+
+        <li>Élément de liste 2</li>
+
+        <li>Élément de liste 3</li>
+
+    </ul>
+
+</body>
+
+</html>
+
+Enregistrer le fichier :
+Enregistrez le fichier en appuyant sur Ctrl + S (ou Cmd + S sur macOS).
+
+
+
+
+Visualiser la page HTML
+Ouvrir la page dans un navigateur :
+Dans l'explorateur de fichiers de votre ordinateur, allez dans le dossier projet-html et double-cliquez sur le fichier index.html.
+Votre page web s'ouvrira dans votre navigateur par défaut et vous verrez le titre, les paragraphes, et la liste non ordonnée.
+
+Versionner votre projet avec Git et GitHub
+Initialiser un dépôt Git :
+Ouvrez un terminal dans VS Code (Ctrl + ouTerminal→Nouveau terminal`) et tapez la commande suivante pour initialiser un dépôt Git local :
+
+git init
+
+Ajouter les fichiers au dépôt :
+Ajoutez le fichier HTML à votre dépôt avec la commande : 
+
+git add .
+
+Effectuer un commit :
+Sauvegardez les changements dans Git avec la commande :
+git commit -m "Ajout de la première page HTML"
+Créer un nouveau dépôt sur GitHub :
+Allez sur GitHub, connectez-vous et créez un nouveau dépôt (projet-html).
+
+Lier le dépôt local à GitHub :
+
+Dans votre terminal VS Code, ajoutez l'URL du dépôt GitHub que vous venez de créer :
+
+bash
+Copy code
+git remote add origin https://github.com/votre-utilisateur/projet-html.git
+Pousser votre projet vers GitHub :
+Envoyez votre projet sur GitHub avec la commande :
+
+bash
+Copy code
+git push -u origin master
+Vérification sur GitHub
+Allez sur GitHub et vérifiez que votre projet est bien en ligne dans le dépôt que vous avez créé. Vous y verrez le fichier index.html que vous avez créé.
